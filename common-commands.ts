@@ -19,3 +19,4 @@
 // docker run -d -p 3306:3306 --name mydatabase mysql ---- para ejecutar un contenedor con un nombre y un puerto y un alias
 // docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw --name mydatabase mysql ---- para ejecutar un contenedor con un nombre y un puerto y un alias y una variable de entorno}
 // docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}" ---- muestra todos los contenedores en una tabla de una forma mas bonita
+// docker rmi mysql ---- para eliminar una imagen
