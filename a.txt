@@ -1,0 +1,5 @@
+• inxi -Fxz
+• driver: ath10k_pci
+• grep [[:alnum:]] /sys/module/ath10k_pci/parameters/*
+• echo "options ath10k_pci fwlps=N" | sudo tee /etc/modprobe.d/ath10k_pci.conf
+• Reiniciar el computador
