@@ -22,3 +22,5 @@
 // docker rmi mysql ---- para eliminar una imagen
 
 // docker build -t username/image-name . ---- para crear una imagen y subirla en docker hub
+
+// docker create mongo ---- para crear un contenedor con una imagen, forma corta de docker container create --name my-mongo -i mongo
