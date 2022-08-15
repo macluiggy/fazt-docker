@@ -33,6 +33,11 @@ app.get("/crear", async (req, res) => {
   return res.send(animal);
 });
 
+app.get("/test", async (req, res) => {
+  console.log("probando...");
+  return res.send('probando');
+});
+
 let port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log("Servidor corriendo en el puerto", port);
