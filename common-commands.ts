@@ -28,4 +28,9 @@
 // docker network create mired ---- para crear una red
 // docker network ls ---- para listar las redes
 // docker network rm mired ---- para eliminar una red
-// una vez creada la red, se debe cambiar el host de localhost al nombre de la red
+// si se quiere comunicar un contenedor con otro se debe crear una red, y se deben usar los alias de los contenedores para comunicarse
+
+// docker build -t miapp . ---- para crear una imagen a partir de un dockerfile
+
+// docker create -p27017:27017 --name monguito --network mired -e MONGO_INITDB_ROOT_USERNAME=luiggy -e MONGO_INITDB_ROOT_PASSWORD=password mongo ---- para crear un contenedor con una red
+// docker create -p3000:3000 --name chanchito --network mired miapp:1.0 ---- para crear un contenedor con una red

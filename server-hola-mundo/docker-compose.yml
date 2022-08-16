@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  chanchito:
+    build: .
+    ports:
+      - "3000:3000" # puerto de la app
+      # si quieres mas puertos, solo agrega mas lineas
+    links: 
+      - monguito # nombre del contenedor a mappear
+  monguito:
