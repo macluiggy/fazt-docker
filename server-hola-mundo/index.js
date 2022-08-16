@@ -14,7 +14,7 @@ const app = express();
 const router = express.Router();
 
 mongoose.connect(
-  "mongodb://luiggy:password@localhost:27017/miapp?authSource=admin"
+  "mongodb://luiggy:password@monguito:27017/miapp?authSource=admin"
 );
 
 app.get("/", async (req, res) => {

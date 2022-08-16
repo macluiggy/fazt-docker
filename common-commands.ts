@@ -24,3 +24,8 @@
 // docker build -t username/image-name . ---- para crear una imagen y subirla en docker hub
 
 // docker create mongo ---- para crear un contenedor con una imagen, forma corta de docker container create --name my-mongo -i mongo
+
+// docker network create mired ---- para crear una red
+// docker network ls ---- para listar las redes
+// docker network rm mired ---- para eliminar una red
+// una vez creada la red, se debe cambiar el host de localhost al nombre de la red
