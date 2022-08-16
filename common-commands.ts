@@ -34,3 +34,9 @@
 
 // docker create -p27017:27017 --name monguito --network mired -e MONGO_INITDB_ROOT_USERNAME=luiggy -e MONGO_INITDB_ROOT_PASSWORD=password mongo ---- para crear un contenedor con una red
 // docker create -p3000:3000 --name chanchito --network mired miapp:1.0 ---- para crear un contenedor con una red
+
+// docker compose ---- para crear un archivo de configuracion de docker compose
+// docker compose up ---- para ejecutar el archivo de configuracion de docker compose
+// docker compose up -d ---- para ejecutar el archivo de configuracion de docker compose en background
+// docker compose down ---- para detener el archivo de configuracion de docker compose
+// docker compose -f docker-compose-dev.yml up ---- para ejecutar un archivo de configuracion de docker compose en especifico
