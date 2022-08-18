@@ -2,8 +2,10 @@ const express = require("express");
 
 const app = express();
 
+let count = 0;
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  count++;
+  res.send("Hello World! this page has been viewed " + count + " times!");
 });
 
 let port = process.env.PORT || 3000;

@@ -38,5 +38,6 @@
 // docker compose ---- para crear un archivo de configuracion de docker compose
 // docker compose up ---- para ejecutar el archivo de configuracion de docker compose
 // docker compose up -d ---- para ejecutar el archivo de configuracion de docker compose en background
+// docker compose up --build -d ---- para reconstruir el archivo de configuracion de docker compose en background, osea revisa si hay cambios en el dockerfile y los aplica, si no los hay el proceso es mas rapido
 // docker compose down ---- para detener el archivo de configuracion de docker compose
 // docker compose -f docker-compose-dev.yml up ---- para ejecutar un archivo de configuracion de docker compose en especifico
